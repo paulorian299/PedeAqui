@@ -1,4 +1,4 @@
-name: Publicar GiftHub
+name: Publicar Pedi Aqui
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Construir GiftHub
+      - name: Construir Pedi Aqui
         run: npm run build
 
       - name: Preparar publicação
@@ -48,6 +48,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Publicar GiftHub
+      - name: Publicar Pedi Aqui
         id: deployment
         uses: actions/deploy-pages@v4
