@@ -1,7 +1,7 @@
 
 {
-  "name": "GiftHub - Delivery",
-  "short_name": "GiftHub",
+  "name": "Pedi Aqui - Delivery",
+  "short_name": "Pedi Aqui",
   "description": "Sistema de delivery e gestão de restaurantes",
   "start_url": "./",
   "scope": "./",
