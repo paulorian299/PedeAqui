@@ -1,15 +1,145 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f97316" />
-    <meta name="description" content="Pedi Aqui - Sistema de delivery" />
-    <link rel="manifest" href="./manifest.json" />
-    <title>Pedi Aqui | Delivery</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
-</html>
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #fff;
+  background: var(--cor, #f97316);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.92);
+}
+
+.aplicativo {
+  min-height: 100vh;
+}
+
+header,
+nav,
+main,
+footer {
+  padding: 16px max(16px, calc((100% - 1100px) / 2));
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #fff;
+  background: var(--cor, #f97316);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #fff;
+}
+
+main {
+  min-height: 70vh;
+}
+
+.banner {
+  margin: 20px 0;
+  padding: 28px;
+  border-radius: 12px;
+  background: #ffedd5;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.produto,
+.item-carrinho,
+.painel {
+  margin: 12px 0;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.produto p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.painel label,
+.painel input {
+  display: block;
+  margin: 10px 0;
+}
+
+.painel input:not([type="color"]) {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+footer {
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .item-carrinho {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
