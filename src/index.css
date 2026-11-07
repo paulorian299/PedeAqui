@@ -1,14 +1,12 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#111111" />
-    <meta name="description" content="GiftHub - Plataforma inteligente de delivery." />
-    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <meta name="theme-color" content="#f97316" />
+    <meta name="description" content="Pedi Aqui - Sistema de delivery" />
     <link rel="manifest" href="./manifest.json" />
-    <title>GiftHub - Delivery</title>
+    <title>Pedi Aqui | Delivery</title>
   </head>
   <body>
     <div id="root"></div>
